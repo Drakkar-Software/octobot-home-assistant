@@ -18,7 +18,9 @@ options:
   enable_node_api: true
 schema:
   enable_node_api: bool
-image: "ghcr.io/drakkar-software/{arch}-addon-octobot-latest"
-#   ^ CI (build-app.yaml) reads this to know where to publish; required, not optional.
-#     Comment out locally only if you want the Supervisor to build from the
-#     Dockerfile instead of pulling — but keep it set on main or CI publish breaks.
+image: "ghcr.io/drakkar-software/addon-octobot-latest"
+#   ^ No {arch} placeholder: both the CI builder and the Supervisor prepend the
+#     arch prefix themselves (e.g. amd64-addon-octobot-latest); a literal {arch}
+#     token in this name breaks the CI build (invalid tag: double arch prefix).
+#     Required for CI to know where to publish; comment out only for local
+#     Supervisor builds from the Dockerfile — keep it set on main.
