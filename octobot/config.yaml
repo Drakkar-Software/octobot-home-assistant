@@ -18,6 +18,7 @@ options:
   enable_node_api: true
 schema:
   enable_node_api: bool
-# image: "ghcr.io/drakkar-software/{arch}-addon-octobot"
-#   ^ commented out = Supervisor builds this app locally from the Dockerfile.
-#     Uncomment to pull the CI-published image instead.
+image: "ghcr.io/drakkar-software/{arch}-addon-octobot"
+#   ^ CI (build-app.yaml) reads this to know where to publish; required, not optional.
+#     Comment out locally only if you want the Supervisor to build from the
+#     Dockerfile instead of pulling — but keep it set on main or CI publish breaks.
