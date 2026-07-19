@@ -1,4 +1,4 @@
-# Home Assistant Add-on: OctoBot (latest)
+# Home Assistant Add-on: OctoBot DEV
 
 _Run [OctoBot](https://github.com/Drakkar-Software/OctoBot), an open-source
 cryptocurrency trading bot, as a Home Assistant add-on (latest/bleeding-edge

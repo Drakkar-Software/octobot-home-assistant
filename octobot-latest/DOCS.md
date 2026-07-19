@@ -1,4 +1,4 @@
-# Home Assistant Add-on: OctoBot (latest)
+# Home Assistant Add-on: OctoBot DEV
 
 ## How to use
 

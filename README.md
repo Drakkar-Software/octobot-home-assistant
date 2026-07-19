@@ -16,7 +16,7 @@ This repository contains the following apps
 
 _OctoBot crypto trading bot, tracking the `stable` Docker image channel._
 
-### [OctoBot (latest)](./octobot-latest)
+### [OctoBot DEV](./octobot-latest)
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]

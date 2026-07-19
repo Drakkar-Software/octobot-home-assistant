@@ -32,5 +32,5 @@ updates and rebuilds.
 
 ## Want the bleeding edge instead?
 
-Install the **OctoBot (latest)** add-on instead, which tracks
+Install the **OctoBot DEV** add-on instead, which tracks
 `drakkarsoftware/octobot:latest`.
