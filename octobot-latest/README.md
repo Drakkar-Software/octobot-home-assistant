@@ -1,6 +1,8 @@
-# Home Assistant App: Example app
+# Home Assistant Add-on: OctoBot (latest)
 
-_Example app to use as a blueprint for new apps._
+_Run [OctoBot](https://github.com/Drakkar-Software/OctoBot), an open-source
+cryptocurrency trading bot, as a Home Assistant add-on (latest/bleeding-edge
+channel)._
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]

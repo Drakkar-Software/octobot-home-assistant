@@ -1,0 +1,4 @@
+configuration:
+  enable_node_api:
+    name: Enable Node API
+    description: Serve the OctoBot Node web interface on port 8000 (opened by the web UI button).

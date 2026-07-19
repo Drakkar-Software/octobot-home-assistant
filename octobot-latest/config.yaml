@@ -1,0 +1,23 @@
+# https://developers.home-assistant.io/docs/apps/configuration#app-configuration
+name: OctoBot (latest)
+version: "1.0.0"
+slug: octobot-latest
+description: OctoBot crypto trading bot (latest) with Node web interface
+url: "https://github.com/drakkar-software/octobot-home-assistant/tree/main/octobot-latest"
+arch:
+  - aarch64
+  - amd64
+init: false
+ports:
+  8000/tcp: 8000
+  # 5001/tcp: 5001   # fallback: classic web dashboard, uncomment if node /app 404s
+ports_description:
+  8000/tcp: "OctoBot Node web interface"
+webui: "http://[HOST]:[PORT:8000/tcp]/app"
+options:
+  enable_node_api: true
+schema:
+  enable_node_api: bool
+# image: "ghcr.io/drakkar-software/{arch}-addon-octobot-latest"
+#   ^ commented out = Supervisor builds this app locally from the Dockerfile.
+#     Uncomment to pull the CI-published image instead.
