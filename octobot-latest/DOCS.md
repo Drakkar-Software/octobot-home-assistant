@@ -27,9 +27,12 @@ unless you only need the classic dashboard on 5001.
 
 ## Data persistence
 
-OctoBot's user config, installed tentacles, logs and backtesting data are all
-stored under this add-on's persistent `/data` folder, so they survive add-on
-updates and rebuilds.
+OctoBot's user config, logs and backtesting data are stored under this add-on's
+persistent `/data` folder, so they survive add-on updates and rebuilds.
+
+Installed **tentacles are intentionally not persisted**: they are wiped on every
+start, so OctoBot reinstalls a fresh default tentacles set each time the add-on
+boots.
 
 ## Want the stable channel instead?
 

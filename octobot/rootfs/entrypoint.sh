@@ -14,4 +14,9 @@ export AUTO_OPEN_IN_WEB_BROWSER=false
 # VOLUMEs, so data survives add-on rebuilds/updates.
 cd /data
 
+# Tentacles are intentionally NOT persisted: wipe them on every start so OctoBot
+# reinstalls a fresh default tentacles set each boot. user/logs/backtesting stay
+# under /data and keep persisting.
+rm -rf /data/tentacles
+
 exec OctoBot "$@"
