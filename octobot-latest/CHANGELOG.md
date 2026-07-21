@@ -1,4 +1,14 @@
 <!-- https://developers.home-assistant.io/docs/apps/presentation#keeping-a-changelog -->
+## 1.1.2
+
+- Add optional `node_external_host` configuration option: sets the external host
+  (and port, if non-default) the Node sync/mobile features advertise, for
+  reverse-proxy / public-hostname setups. Leave empty to keep OctoBot's default.
+
+## 1.1.1
+
+- Rebuild against the current OctoBot base image.
+
 ## 1.1.0
 
 - Tentacles are no longer persisted: they are wiped on every start so OctoBot

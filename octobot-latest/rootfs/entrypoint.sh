@@ -3,9 +3,16 @@ set -e
 
 OPTS=/data/options.json
 enable_node_api() { python3 -c "import json;print(str(json.load(open('$OPTS')).get('enable_node_api',True)).lower())" 2>/dev/null || echo true; }
+node_external_host() { python3 -c "import json;print(json.load(open('$OPTS')).get('node_external_host') or '')" 2>/dev/null || echo ""; }
 
 export ENABLE_NODE_API="$(enable_node_api)"
 export AUTO_OPEN_IN_WEB_BROWSER=false
+
+# Optional external host (and port, if non-default) the Node sync/mobile features
+# advertise — set it when OctoBot sits behind a reverse proxy or a public
+# hostname. Only exported when non-empty so OctoBot keeps its own default.
+NODE_EXTERNAL_HOST_VALUE="$(node_external_host)"
+[ -n "$NODE_EXTERNAL_HOST_VALUE" ] && export NODE_EXTERNAL_HOST="$NODE_EXTERNAL_HOST_VALUE"
 
 # OctoBot resolves its user/tentacles/backtesting/logs folders as plain relative
 # paths against the process's current working directory (no env override exists

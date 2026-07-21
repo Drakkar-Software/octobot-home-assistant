@@ -24,6 +24,12 @@ itself once it's running.
 Enables OctoBot's Node API/web interface service on port 8000. Leave this on
 unless you only need the classic dashboard on 5001.
 
+### Option: `node_external_host` (optional)
+
+External host (and port, if non-default) the Node sync/mobile features advertise
+— set this when OctoBot is reached through a reverse proxy or a public hostname
+different from the add-on's own address. Leave empty to keep OctoBot's default.
+
 ## Data persistence
 
 OctoBot's user config, logs and backtesting data are stored under this add-on's
