@@ -1,4 +1,8 @@
 <!-- https://developers.home-assistant.io/docs/apps/presentation#keeping-a-changelog -->
+## 1.1.6
+
+- Rebuild against the current OctoBot latest base image.
+
 ## 1.1.2
 
 - Add optional `node_external_host` configuration option: sets the external host
